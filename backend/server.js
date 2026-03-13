@@ -7,7 +7,7 @@ const paystackRoute = require("./routes/paystack.js");
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:5174"
+    origin: "*"
 }));
 
 app.use(express.json());
