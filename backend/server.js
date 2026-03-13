@@ -7,7 +7,8 @@ const paystackRoute = require("./routes/paystack.js");
 const app = express();
 
 app.use(cors({
-    origin: "https://mini-pay2.vercel.app/"
+    origin: 'https://mini-pay2.vercel.app',
+    credentials:true,
 }));
 
 app.use(express.json());

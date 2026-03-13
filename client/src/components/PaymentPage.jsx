@@ -7,8 +7,8 @@ export default function PaymentPage() {
   const pay = async () => {
     try {
       const res = await axios.post(
-        "https://mini-pay-1.onrender.com/api/paystack/create-payment",
-        { email: "customer@email.com", amountGBP }
+        "https://mini-pay-1.onrender.com/api/paystack/create-payment" ,
+        { email: "larryiwobi@gmail.com", amountGBP }, { withCredentials: true }
       )
 
       window.location.href = res.data.url
