@@ -43,7 +43,7 @@ router.post("/create-payment", async (req, res) => {
         email: email,
         amount: amountNGN * 100, // kobo
         currency: "NGN",
-        callback_url: "http://localhost:5174/payment-success",
+        callback_url: "https://mini-pay2.vercel.app/payment-success",
         metadata: {
           original_currency: "GBP",
           original_amount: amountGBP,
