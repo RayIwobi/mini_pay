@@ -9,7 +9,7 @@ async function getLiveGBPtoNGN() {
   try {
     // Replace with your API URL
     const res = await axios.get(
-      "https://v6.exchangerate-api.com/v6/1eebeb7abd4db2751280edf7/latest/GBP"
+      `https://v6.exchangerate-api.com/v6/${process.env.exchange_api}/latest/GBP`
     );
 
     // ExchangeRate-API returns the rates object under res.data.conversion_rates
